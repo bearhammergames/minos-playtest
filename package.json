@@ -1,0 +1,1 @@
+{"name":"spellspun-playtest","version":"1.0.0","type":"module","private":true,"scripts":{"demo":"node agent_cli.mjs --demo 3","agent":"node agent_cli.mjs","sim":"node runsim/spellspun_sim.mjs --runs 500 --policy all"}}
