@@ -1,0 +1,1942 @@
+{
+  "stage": "refine",
+  "seeds": [
+    1000,
+    8919,
+    16838,
+    24757,
+    32676,
+    40595,
+    48514,
+    56433,
+    64352,
+    72271,
+    80190,
+    88109,
+    96028,
+    103947,
+    111866,
+    119785,
+    127704,
+    135623,
+    143542,
+    151461,
+    159380,
+    167299,
+    175218,
+    183137
+  ],
+  "wallMin": 25.6,
+  "results": [
+    {
+      "name": "baseline",
+      "note": "defaults (n=24 confidence read)",
+      "overrides": {},
+      "acceptance": {
+        "n": {
+          "runs": 168,
+          "played": 168,
+          "runaways": 0,
+          "segments": 2116,
+          "seg1": 168
+        },
+        "dials": [
+          {
+            "key": "die1",
+            "label": "die@seg-1 (raw snap)",
+            "value": 0.09523809523809523,
+            "target": "8.0%–18.0%",
+            "pass": true
+          },
+          {
+            "key": "runMean",
+            "label": "mean run length",
+            "value": 11.595238095238095,
+            "target": "6–12",
+            "pass": true
+          },
+          {
+            "key": "runSpread",
+            "label": "run-length spread (×)",
+            "value": 3.5000000000000004,
+            "target": "≤ 3",
+            "pass": false
+          },
+          {
+            "key": "viability",
+            "label": "viability spread",
+            "value": 2,
+            "target": "none <0.5× / >1.5×",
+            "pass": false
+          },
+          {
+            "key": "bossDeath",
+            "label": "boss-death share",
+            "value": 0.5476190476190477,
+            "target": "35.0%–60.0%",
+            "pass": true
+          },
+          {
+            "key": "scoreRatio",
+            "label": "p99/p50 score",
+            "value": 12.008592870544113,
+            "target": "≥ 4×",
+            "pass": true
+          },
+          {
+            "key": "calibMAE",
+            "label": "pred-vs-realized P(snap) MAE",
+            "value": 0.02989896030245747,
+            "target": "≤ 0.05",
+            "pass": true
+          },
+          {
+            "key": "probeMs",
+            "label": "probe cost ms/segment",
+            "value": 78.1011593749992,
+            "target": "≤ 70ms",
+            "pass": false
+          }
+        ],
+        "detail": {
+          "die1": {
+            "agg": 0.09523809523809523,
+            "byArchetype": {
+              "miser": 0.041666666666666664,
+              "monk": 0.041666666666666664,
+              "weaver": 0.041666666666666664,
+              "tempoist": 0.041666666666666664,
+              "zealot": 0.4583333333333333,
+              "glutton": 0.041666666666666664,
+              "debtor": 0
+            },
+            "death1": 0.02976190476190476
+          },
+          "runLength": {
+            "mean": 11.595238095238095,
+            "byArchetype": {
+              "miser": 17.791666666666668,
+              "monk": 7.458333333333333,
+              "weaver": 12.125,
+              "tempoist": 17.708333333333332,
+              "zealot": 5.083333333333333,
+              "glutton": 7.291666666666667,
+              "debtor": 13.708333333333334
+            },
+            "spread": 3.5000000000000004
+          },
+          "viability": {
+            "grandMedian": 291.5,
+            "scoreMedian": {
+              "miser": 731,
+              "monk": 215,
+              "weaver": 370,
+              "tempoist": 291.5,
+              "zealot": 101.5,
+              "glutton": 219.5,
+              "debtor": 369
+            },
+            "over": [
+              "miser"
+            ],
+            "under": [
+              "zealot"
+            ]
+          },
+          "bossDeath": {
+            "share": 0.5476190476190477,
+            "bossDeaths": 92,
+            "deaths": 168
+          },
+          "score": {
+            "p50": 266.5,
+            "p90": 1028.3000000000009,
+            "p99": 3200.2900000000063,
+            "ratio": 12.008592870544113
+          },
+          "calibration": {
+            "mae": 0.02989896030245747,
+            "aggPredicted": 0.20562315689981112,
+            "aggRealized": 0.17911153119092627,
+            "bins": [
+              {
+                "lo": 0,
+                "hi": 0.1,
+                "n": 242,
+                "predMean": 0.0761,
+                "realRate": 0.09090909090909091,
+                "err": 0.01480909090909091
+              },
+              {
+                "lo": 0.1,
+                "hi": 0.2,
+                "n": 960,
+                "predMean": 0.1461938541666667,
+                "realRate": 0.14583333333333334,
+                "err": 0.00036052083333334983
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.3,
+                "n": 558,
+                "predMean": 0.23849068100358417,
+                "realRate": 0.22043010752688172,
+                "err": 0.01806057347670245
+              },
+              {
+                "lo": 0.3,
+                "hi": 0.4,
+                "n": 212,
+                "predMean": 0.3384061320754718,
+                "realRate": 0.25,
+                "err": 0.08840613207547182
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.5,
+                "n": 85,
+                "predMean": 0.4420105882352942,
+                "realRate": 0.25882352941176473,
+                "err": 0.18318705882352948
+              },
+              {
+                "lo": 0.5,
+                "hi": 0.6,
+                "n": 42,
+                "predMean": 0.5544571428571429,
+                "realRate": 0.2857142857142857,
+                "err": 0.26874285714285717
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.7,
+                "n": 17,
+                "predMean": 0.6269588235294116,
+                "realRate": 0.4117647058823529,
+                "err": 0.21519411764705865
+              }
+            ]
+          },
+          "fitFlags": {
+            "overall": {
+              "n": 2116,
+              "band": 0.7206994328922496,
+              "nofitHard": 0.23582230623818526,
+              "nofitEasy": 0.043478260869565216
+            },
+            "byPatron": {
+              "0": {
+                "n": 487,
+                "band": 0.5646817248459959,
+                "nofitHard": 0.4086242299794661,
+                "nofitEasy": 0.026694045174537988
+              },
+              "1": {
+                "n": 424,
+                "band": 0.6863207547169812,
+                "nofitHard": 0.25,
+                "nofitEasy": 0.06367924528301887
+              },
+              "2": {
+                "n": 327,
+                "band": 0.7431192660550459,
+                "nofitHard": 0.22324159021406728,
+                "nofitEasy": 0.03363914373088685
+              },
+              "3+": {
+                "n": 878,
+                "band": 0.8154897494305239,
+                "nofitHard": 0.1378132118451025,
+                "nofitEasy": 0.04669703872437358
+              }
+            }
+          },
+          "perf": {
+            "msPerSeg": 78.1011593749992,
+            "evalsPerSeg": 18.354166666666668,
+            "samples": 192
+          }
+        }
+      }
+    },
+    {
+      "name": "r05",
+      "note": "ramp .05 (coarse spread winner)",
+      "overrides": {
+        "generator2.bandRamp": 0.05
+      },
+      "acceptance": {
+        "n": {
+          "runs": 168,
+          "played": 168,
+          "runaways": 0,
+          "segments": 1837,
+          "seg1": 168
+        },
+        "dials": [
+          {
+            "key": "die1",
+            "label": "die@seg-1 (raw snap)",
+            "value": 0.09523809523809523,
+            "target": "8.0%–18.0%",
+            "pass": true
+          },
+          {
+            "key": "runMean",
+            "label": "mean run length",
+            "value": 9.93452380952381,
+            "target": "6–12",
+            "pass": true
+          },
+          {
+            "key": "runSpread",
+            "label": "run-length spread (×)",
+            "value": 2.957264957264957,
+            "target": "≤ 3",
+            "pass": true
+          },
+          {
+            "key": "viability",
+            "label": "viability spread",
+            "value": 2,
+            "target": "none <0.5× / >1.5×",
+            "pass": false
+          },
+          {
+            "key": "bossDeath",
+            "label": "boss-death share",
+            "value": 0.42857142857142855,
+            "target": "35.0%–60.0%",
+            "pass": true
+          },
+          {
+            "key": "scoreRatio",
+            "label": "p99/p50 score",
+            "value": 9.46437768240348,
+            "target": "≥ 4×",
+            "pass": true
+          },
+          {
+            "key": "calibMAE",
+            "label": "pred-vs-realized P(snap) MAE",
+            "value": 0.047070440936309216,
+            "target": "≤ 0.05",
+            "pass": true
+          },
+          {
+            "key": "probeMs",
+            "label": "probe cost ms/segment",
+            "value": 60.842311458334734,
+            "target": "≤ 70ms",
+            "pass": true
+          }
+        ],
+        "detail": {
+          "die1": {
+            "agg": 0.09523809523809523,
+            "byArchetype": {
+              "miser": 0.041666666666666664,
+              "monk": 0.041666666666666664,
+              "weaver": 0.041666666666666664,
+              "tempoist": 0.041666666666666664,
+              "zealot": 0.4583333333333333,
+              "glutton": 0.041666666666666664,
+              "debtor": 0
+            },
+            "death1": 0.02976190476190476
+          },
+          "runLength": {
+            "mean": 9.93452380952381,
+            "byArchetype": {
+              "miser": 14.416666666666666,
+              "monk": 6.958333333333333,
+              "weaver": 9.833333333333334,
+              "tempoist": 12.791666666666666,
+              "zealot": 4.875,
+              "glutton": 6.916666666666667,
+              "debtor": 13.75
+            },
+            "spread": 2.957264957264957
+          },
+          "viability": {
+            "grandMedian": 242,
+            "scoreMedian": {
+              "miser": 435,
+              "monk": 242,
+              "weaver": 244,
+              "tempoist": 226,
+              "zealot": 98,
+              "glutton": 163,
+              "debtor": 250
+            },
+            "over": [
+              "miser"
+            ],
+            "under": [
+              "zealot"
+            ]
+          },
+          "bossDeath": {
+            "share": 0.42857142857142855,
+            "bossDeaths": 72,
+            "deaths": 168
+          },
+          "score": {
+            "p50": 233,
+            "p90": 750.7000000000005,
+            "p99": 2205.2000000000107,
+            "ratio": 9.46437768240348
+          },
+          "calibration": {
+            "mae": 0.047070440936309216,
+            "aggPredicted": 0.22254948285247703,
+            "aggRealized": 0.19324986390854654,
+            "bins": [
+              {
+                "lo": 0,
+                "hi": 0.1,
+                "n": 181,
+                "predMean": 0.07485801104972378,
+                "realRate": 0.08839779005524862,
+                "err": 0.013539779005524832
+              },
+              {
+                "lo": 0.1,
+                "hi": 0.2,
+                "n": 773,
+                "predMean": 0.146333893919793,
+                "realRate": 0.1500646830530401,
+                "err": 0.003730789133247092
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.3,
+                "n": 488,
+                "predMean": 0.2377297131147541,
+                "realRate": 0.26024590163934425,
+                "err": 0.02251618852459014
+              },
+              {
+                "lo": 0.3,
+                "hi": 0.4,
+                "n": 219,
+                "predMean": 0.34457945205479473,
+                "realRate": 0.2511415525114155,
+                "err": 0.09343789954337922
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.5,
+                "n": 73,
+                "predMean": 0.44035479452054793,
+                "realRate": 0.2191780821917808,
+                "err": 0.22117671232876712
+              },
+              {
+                "lo": 0.5,
+                "hi": 0.6,
+                "n": 79,
+                "predMean": 0.5520506329113923,
+                "realRate": 0.25316455696202533,
+                "err": 0.298886075949367
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.7,
+                "n": 24,
+                "predMean": 0.6218791666666668,
+                "realRate": 0.20833333333333334,
+                "err": 0.4135458333333334
+              }
+            ]
+          },
+          "fitFlags": {
+            "overall": {
+              "n": 1837,
+              "band": 0.7403375068045727,
+              "nofitHard": 0.2144801306477953,
+              "nofitEasy": 0.045182362547632006
+            },
+            "byPatron": {
+              "0": {
+                "n": 487,
+                "band": 0.5646817248459959,
+                "nofitHard": 0.4086242299794661,
+                "nofitEasy": 0.026694045174537988
+              },
+              "1": {
+                "n": 422,
+                "band": 0.7274881516587678,
+                "nofitHard": 0.1872037914691943,
+                "nofitEasy": 0.08530805687203792
+              },
+              "2": {
+                "n": 317,
+                "band": 0.7917981072555205,
+                "nofitHard": 0.17350157728706625,
+                "nofitEasy": 0.03470031545741325
+              },
+              "3+": {
+                "n": 611,
+                "band": 0.8625204582651391,
+                "nofitHard": 0.09983633387888707,
+                "nofitEasy": 0.03764320785597381
+              }
+            }
+          },
+          "perf": {
+            "msPerSeg": 60.842311458334734,
+            "evalsPerSeg": 17.895833333333332,
+            "samples": 192
+          }
+        }
+      }
+    },
+    {
+      "name": "r06",
+      "note": "ramp .06 (more compression)",
+      "overrides": {
+        "generator2.bandRamp": 0.06
+      },
+      "acceptance": {
+        "n": {
+          "runs": 168,
+          "played": 168,
+          "runaways": 0,
+          "segments": 1799,
+          "seg1": 168
+        },
+        "dials": [
+          {
+            "key": "die1",
+            "label": "die@seg-1 (raw snap)",
+            "value": 0.09523809523809523,
+            "target": "8.0%–18.0%",
+            "pass": true
+          },
+          {
+            "key": "runMean",
+            "label": "mean run length",
+            "value": 9.708333333333334,
+            "target": "6–12",
+            "pass": true
+          },
+          {
+            "key": "runSpread",
+            "label": "run-length spread (×)",
+            "value": 2.975,
+            "target": "≤ 3",
+            "pass": true
+          },
+          {
+            "key": "viability",
+            "label": "viability spread",
+            "value": 1,
+            "target": "none <0.5× / >1.5×",
+            "pass": false
+          },
+          {
+            "key": "bossDeath",
+            "label": "boss-death share",
+            "value": 0.4880952380952381,
+            "target": "35.0%–60.0%",
+            "pass": true
+          },
+          {
+            "key": "scoreRatio",
+            "label": "p99/p50 score",
+            "value": 9.205242718446614,
+            "target": "≥ 4×",
+            "pass": true
+          },
+          {
+            "key": "calibMAE",
+            "label": "pred-vs-realized P(snap) MAE",
+            "value": 0.053527626459144016,
+            "target": "≤ 0.05",
+            "pass": false
+          },
+          {
+            "key": "probeMs",
+            "label": "probe cost ms/segment",
+            "value": 54.72670104166779,
+            "target": "≤ 70ms",
+            "pass": true
+          }
+        ],
+        "detail": {
+          "die1": {
+            "agg": 0.09523809523809523,
+            "byArchetype": {
+              "miser": 0.041666666666666664,
+              "monk": 0.041666666666666664,
+              "weaver": 0.041666666666666664,
+              "tempoist": 0.041666666666666664,
+              "zealot": 0.4583333333333333,
+              "glutton": 0.041666666666666664,
+              "debtor": 0
+            },
+            "death1": 0.02976190476190476
+          },
+          "runLength": {
+            "mean": 9.708333333333334,
+            "byArchetype": {
+              "miser": 13.5,
+              "monk": 5.666666666666667,
+              "weaver": 10.583333333333334,
+              "tempoist": 11.208333333333334,
+              "zealot": 5,
+              "glutton": 7.125,
+              "debtor": 14.875
+            },
+            "spread": 2.975
+          },
+          "viability": {
+            "grandMedian": 201.5,
+            "scoreMedian": {
+              "miser": 291.5,
+              "monk": 156.5,
+              "weaver": 256,
+              "tempoist": 201.5,
+              "zealot": 108,
+              "glutton": 137,
+              "debtor": 553.5
+            },
+            "over": [
+              "debtor"
+            ],
+            "under": []
+          },
+          "bossDeath": {
+            "share": 0.4880952380952381,
+            "bossDeaths": 82,
+            "deaths": 168
+          },
+          "score": {
+            "p50": 206,
+            "p90": 830.6,
+            "p99": 1896.2800000000027,
+            "ratio": 9.205242718446614
+          },
+          "calibration": {
+            "mae": 0.053527626459144016,
+            "aggPredicted": 0.23828237909950023,
+            "aggRealized": 0.18899388549193996,
+            "bins": [
+              {
+                "lo": 0,
+                "hi": 0.1,
+                "n": 166,
+                "predMean": 0.07456987951807233,
+                "realRate": 0.0963855421686747,
+                "err": 0.021815662650602377
+              },
+              {
+                "lo": 0.1,
+                "hi": 0.2,
+                "n": 703,
+                "predMean": 0.14614068278805117,
+                "realRate": 0.1379800853485064,
+                "err": 0.008160597439544781
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.3,
+                "n": 455,
+                "predMean": 0.23794065934065944,
+                "realRate": 0.21978021978021978,
+                "err": 0.018160439560439667
+              },
+              {
+                "lo": 0.3,
+                "hi": 0.4,
+                "n": 222,
+                "predMean": 0.3413855855855859,
+                "realRate": 0.2072072072072072,
+                "err": 0.1341783783783787
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.5,
+                "n": 118,
+                "predMean": 0.4396906779661018,
+                "realRate": 0.2457627118644068,
+                "err": 0.193927966101695
+              },
+              {
+                "lo": 0.5,
+                "hi": 0.6,
+                "n": 89,
+                "predMean": 0.5472786516853931,
+                "realRate": 0.38202247191011235,
+                "err": 0.1652561797752808
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.7,
+                "n": 44,
+                "predMean": 0.6223522727272728,
+                "realRate": 0.38636363636363635,
+                "err": 0.23598863636363643
+              },
+              {
+                "lo": 0.7,
+                "hi": 0.8,
+                "n": 1,
+                "predMean": 0.7208,
+                "realRate": 0,
+                "err": 0.7208
+              },
+              {
+                "lo": 0.8,
+                "hi": 0.9,
+                "n": 1,
+                "predMean": 0.8083,
+                "realRate": 1,
+                "err": 0.19169999999999998
+              }
+            ]
+          },
+          "fitFlags": {
+            "overall": {
+              "n": 1799,
+              "band": 0.7370761534185659,
+              "nofitHard": 0.20622568093385213,
+              "nofitEasy": 0.05669816564758199
+            },
+            "byPatron": {
+              "0": {
+                "n": 487,
+                "band": 0.5646817248459959,
+                "nofitHard": 0.4086242299794661,
+                "nofitEasy": 0.026694045174537988
+              },
+              "1": {
+                "n": 412,
+                "band": 0.7330097087378641,
+                "nofitHard": 0.18689320388349515,
+                "nofitEasy": 0.08009708737864078
+              },
+              "2": {
+                "n": 295,
+                "band": 0.8271186440677966,
+                "nofitHard": 0.13220338983050847,
+                "nofitEasy": 0.04067796610169491
+              },
+              "3+": {
+                "n": 605,
+                "band": 0.8347107438016529,
+                "nofitHard": 0.09256198347107437,
+                "nofitEasy": 0.07272727272727272
+              }
+            }
+          },
+          "perf": {
+            "msPerSeg": 54.72670104166779,
+            "evalsPerSeg": 17.645833333333332,
+            "samples": 192
+          }
+        }
+      }
+    },
+    {
+      "name": "r07",
+      "note": "ramp .07 (most compression)",
+      "overrides": {
+        "generator2.bandRamp": 0.07
+      },
+      "acceptance": {
+        "n": {
+          "runs": 168,
+          "played": 168,
+          "runaways": 0,
+          "segments": 1881,
+          "seg1": 168
+        },
+        "dials": [
+          {
+            "key": "die1",
+            "label": "die@seg-1 (raw snap)",
+            "value": 0.09523809523809523,
+            "target": "8.0%–18.0%",
+            "pass": true
+          },
+          {
+            "key": "runMean",
+            "label": "mean run length",
+            "value": 10.196428571428571,
+            "target": "6–12",
+            "pass": true
+          },
+          {
+            "key": "runSpread",
+            "label": "run-length spread (×)",
+            "value": 3.7818181818181817,
+            "target": "≤ 3",
+            "pass": false
+          },
+          {
+            "key": "viability",
+            "label": "viability spread",
+            "value": 2,
+            "target": "none <0.5× / >1.5×",
+            "pass": false
+          },
+          {
+            "key": "bossDeath",
+            "label": "boss-death share",
+            "value": 0.42857142857142855,
+            "target": "35.0%–60.0%",
+            "pass": true
+          },
+          {
+            "key": "scoreRatio",
+            "label": "p99/p50 score",
+            "value": 14.39715762273902,
+            "target": "≥ 4×",
+            "pass": true
+          },
+          {
+            "key": "calibMAE",
+            "label": "pred-vs-realized P(snap) MAE",
+            "value": 0.08051355661881979,
+            "target": "≤ 0.05",
+            "pass": false
+          },
+          {
+            "key": "probeMs",
+            "label": "probe cost ms/segment",
+            "value": 52.46296302083223,
+            "target": "≤ 70ms",
+            "pass": true
+          }
+        ],
+        "detail": {
+          "die1": {
+            "agg": 0.09523809523809523,
+            "byArchetype": {
+              "miser": 0.041666666666666664,
+              "monk": 0.041666666666666664,
+              "weaver": 0.041666666666666664,
+              "tempoist": 0.041666666666666664,
+              "zealot": 0.4583333333333333,
+              "glutton": 0.041666666666666664,
+              "debtor": 0
+            },
+            "death1": 0.02976190476190476
+          },
+          "runLength": {
+            "mean": 10.196428571428571,
+            "byArchetype": {
+              "miser": 14.833333333333334,
+              "monk": 6.791666666666667,
+              "weaver": 9.833333333333334,
+              "tempoist": 11.083333333333334,
+              "zealot": 4.583333333333333,
+              "glutton": 6.916666666666667,
+              "debtor": 17.333333333333332
+            },
+            "spread": 3.7818181818181817
+          },
+          "viability": {
+            "grandMedian": 169,
+            "scoreMedian": {
+              "miser": 459.5,
+              "monk": 157,
+              "weaver": 169,
+              "tempoist": 135,
+              "zealot": 107,
+              "glutton": 186,
+              "debtor": 423.5
+            },
+            "over": [
+              "miser",
+              "debtor"
+            ],
+            "under": []
+          },
+          "bossDeath": {
+            "share": 0.42857142857142855,
+            "bossDeaths": 72,
+            "deaths": 168
+          },
+          "score": {
+            "p50": 193.5,
+            "p90": 998.1000000000001,
+            "p99": 2785.8500000000004,
+            "ratio": 14.39715762273902
+          },
+          "calibration": {
+            "mae": 0.08051355661881979,
+            "aggPredicted": 0.26448825093035644,
+            "aggRealized": 0.18819776714513556,
+            "bins": [
+              {
+                "lo": 0,
+                "hi": 0.1,
+                "n": 162,
+                "predMean": 0.07424814814814819,
+                "realRate": 0.09876543209876543,
+                "err": 0.02451728395061724
+              },
+              {
+                "lo": 0.1,
+                "hi": 0.2,
+                "n": 627,
+                "predMean": 0.1467511961722487,
+                "realRate": 0.14035087719298245,
+                "err": 0.00640031897926624
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.3,
+                "n": 489,
+                "predMean": 0.23967177914110432,
+                "realRate": 0.21881390593047034,
+                "err": 0.02085787321063398
+              },
+              {
+                "lo": 0.3,
+                "hi": 0.4,
+                "n": 236,
+                "predMean": 0.3489254237288137,
+                "realRate": 0.2584745762711864,
+                "err": 0.09045084745762727
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.5,
+                "n": 153,
+                "predMean": 0.4517941176470588,
+                "realRate": 0.1830065359477124,
+                "err": 0.26878758169934636
+              },
+              {
+                "lo": 0.5,
+                "hi": 0.6,
+                "n": 139,
+                "predMean": 0.5617158273381297,
+                "realRate": 0.2589928057553957,
+                "err": 0.30272302158273406
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.7,
+                "n": 75,
+                "predMean": 0.6228306666666668,
+                "realRate": 0.24,
+                "err": 0.38283066666666676
+              }
+            ]
+          },
+          "fitFlags": {
+            "overall": {
+              "n": 1881,
+              "band": 0.7363104731525785,
+              "nofitHard": 0.1972355130249867,
+              "nofitEasy": 0.06645401382243488
+            },
+            "byPatron": {
+              "0": {
+                "n": 487,
+                "band": 0.5646817248459959,
+                "nofitHard": 0.4086242299794661,
+                "nofitEasy": 0.026694045174537988
+              },
+              "1": {
+                "n": 409,
+                "band": 0.7359413202933985,
+                "nofitHard": 0.1687041564792176,
+                "nofitEasy": 0.09535452322738386
+              },
+              "2": {
+                "n": 296,
+                "band": 0.8581081081081081,
+                "nofitHard": 0.10472972972972973,
+                "nofitEasy": 0.037162162162162164
+              },
+              "3+": {
+                "n": 689,
+                "band": 0.8055152394775036,
+                "nofitHard": 0.10449927431059507,
+                "nofitEasy": 0.0899854862119013
+              }
+            }
+          },
+          "perf": {
+            "msPerSeg": 52.46296302083223,
+            "evalsPerSeg": 17.9375,
+            "samples": 192
+          }
+        }
+      }
+    },
+    {
+      "name": "b13_r05",
+      "note": "base0 .13 ramp .05 (mild A)",
+      "overrides": {
+        "generator2.bandBase0": 0.13,
+        "generator2.bandRamp": 0.05
+      },
+      "acceptance": {
+        "n": {
+          "runs": 168,
+          "played": 168,
+          "runaways": 0,
+          "segments": 1830,
+          "seg1": 168
+        },
+        "dials": [
+          {
+            "key": "die1",
+            "label": "die@seg-1 (raw snap)",
+            "value": 0.08928571428571429,
+            "target": "8.0%–18.0%",
+            "pass": true
+          },
+          {
+            "key": "runMean",
+            "label": "mean run length",
+            "value": 9.892857142857142,
+            "target": "6–12",
+            "pass": true
+          },
+          {
+            "key": "runSpread",
+            "label": "run-length spread (×)",
+            "value": 4.044943820224719,
+            "target": "≤ 3",
+            "pass": false
+          },
+          {
+            "key": "viability",
+            "label": "viability spread",
+            "value": 3,
+            "target": "none <0.5× / >1.5×",
+            "pass": false
+          },
+          {
+            "key": "bossDeath",
+            "label": "boss-death share",
+            "value": 0.43452380952380953,
+            "target": "35.0%–60.0%",
+            "pass": true
+          },
+          {
+            "key": "scoreRatio",
+            "label": "p99/p50 score",
+            "value": 12.6422680412372,
+            "target": "≥ 4×",
+            "pass": true
+          },
+          {
+            "key": "calibMAE",
+            "label": "pred-vs-realized P(snap) MAE",
+            "value": 0.06166027322404376,
+            "target": "≤ 0.05",
+            "pass": false
+          },
+          {
+            "key": "probeMs",
+            "label": "probe cost ms/segment",
+            "value": 54.45418072917224,
+            "target": "≤ 70ms",
+            "pass": true
+          }
+        ],
+        "detail": {
+          "die1": {
+            "agg": 0.08928571428571429,
+            "byArchetype": {
+              "miser": 0.041666666666666664,
+              "monk": 0.041666666666666664,
+              "weaver": 0.041666666666666664,
+              "tempoist": 0.041666666666666664,
+              "zealot": 0.4166666666666667,
+              "glutton": 0.041666666666666664,
+              "debtor": 0
+            },
+            "death1": 0.02976190476190476
+          },
+          "runLength": {
+            "mean": 9.892857142857142,
+            "byArchetype": {
+              "miser": 14.041666666666666,
+              "monk": 5.666666666666667,
+              "weaver": 9.041666666666666,
+              "tempoist": 14.125,
+              "zealot": 3.7083333333333335,
+              "glutton": 7.666666666666667,
+              "debtor": 15
+            },
+            "spread": 4.044943820224719
+          },
+          "viability": {
+            "grandMedian": 195,
+            "scoreMedian": {
+              "miser": 414.5,
+              "monk": 116.5,
+              "weaver": 195,
+              "tempoist": 337,
+              "zealot": 103,
+              "glutton": 186.5,
+              "debtor": 570
+            },
+            "over": [
+              "miser",
+              "tempoist",
+              "debtor"
+            ],
+            "under": []
+          },
+          "bossDeath": {
+            "share": 0.43452380952380953,
+            "bossDeaths": 73,
+            "deaths": 168
+          },
+          "score": {
+            "p50": 194,
+            "p90": 908.8000000000004,
+            "p99": 2452.6000000000167,
+            "ratio": 12.6422680412372
+          },
+          "calibration": {
+            "mae": 0.06166027322404376,
+            "aggPredicted": 0.2526622404371584,
+            "aggRealized": 0.2010928961748634,
+            "bins": [
+              {
+                "lo": 0,
+                "hi": 0.1,
+                "n": 104,
+                "predMean": 0.08060384615384625,
+                "realRate": 0.08653846153846154,
+                "err": 0.005934615384615288
+              },
+              {
+                "lo": 0.1,
+                "hi": 0.2,
+                "n": 678,
+                "predMean": 0.15100884955752214,
+                "realRate": 0.16371681415929204,
+                "err": 0.0127079646017699
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.3,
+                "n": 521,
+                "predMean": 0.23873109404990403,
+                "realRate": 0.21305182341650672,
+                "err": 0.02567927063339731
+              },
+              {
+                "lo": 0.3,
+                "hi": 0.4,
+                "n": 254,
+                "predMean": 0.34488543307086633,
+                "realRate": 0.2637795275590551,
+                "err": 0.08110590551181124
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.5,
+                "n": 127,
+                "predMean": 0.4417047244094491,
+                "realRate": 0.2204724409448819,
+                "err": 0.2212322834645672
+              },
+              {
+                "lo": 0.5,
+                "hi": 0.6,
+                "n": 111,
+                "predMean": 0.5573171171171172,
+                "realRate": 0.2972972972972973,
+                "err": 0.26001981981981986
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.7,
+                "n": 35,
+                "predMean": 0.6190457142857142,
+                "realRate": 0.2571428571428571,
+                "err": 0.3619028571428571
+              }
+            ]
+          },
+          "fitFlags": {
+            "overall": {
+              "n": 1830,
+              "band": 0.7633879781420765,
+              "nofitHard": 0.16393442622950818,
+              "nofitEasy": 0.0726775956284153
+            },
+            "byPatron": {
+              "0": {
+                "n": 483,
+                "band": 0.6480331262939959,
+                "nofitHard": 0.2939958592132505,
+                "nofitEasy": 0.057971014492753624
+              },
+              "1": {
+                "n": 389,
+                "band": 0.7609254498714653,
+                "nofitHard": 0.13367609254498714,
+                "nofitEasy": 0.10539845758354756
+              },
+              "2": {
+                "n": 295,
+                "band": 0.8067796610169492,
+                "nofitHard": 0.13559322033898305,
+                "nofitEasy": 0.0576271186440678
+              },
+              "3+": {
+                "n": 663,
+                "band": 0.8295625942684767,
+                "nofitHard": 0.09954751131221719,
+                "nofitEasy": 0.07088989441930618
+              }
+            }
+          },
+          "perf": {
+            "msPerSeg": 54.45418072917224,
+            "evalsPerSeg": 17.666666666666668,
+            "samples": 192
+          }
+        }
+      }
+    },
+    {
+      "name": "b13_r05_easy08",
+      "note": "base0 .13 ramp .05 easy .8 (expr blend: patron-0 targets .104/.13/.195)",
+      "overrides": {
+        "generator2.bandBase0": 0.13,
+        "generator2.bandRamp": 0.05,
+        "generator2.bandEasy": 0.8
+      },
+      "acceptance": {
+        "n": {
+          "runs": 168,
+          "played": 168,
+          "runaways": 0,
+          "segments": 1747,
+          "seg1": 168
+        },
+        "dials": [
+          {
+            "key": "die1",
+            "label": "die@seg-1 (raw snap)",
+            "value": 0.10119047619047619,
+            "target": "8.0%–18.0%",
+            "pass": true
+          },
+          {
+            "key": "runMean",
+            "label": "mean run length",
+            "value": 9.398809523809524,
+            "target": "6–12",
+            "pass": true
+          },
+          {
+            "key": "runSpread",
+            "label": "run-length spread (×)",
+            "value": 4.247058823529412,
+            "target": "≤ 3",
+            "pass": false
+          },
+          {
+            "key": "viability",
+            "label": "viability spread",
+            "value": 2,
+            "target": "none <0.5× / >1.5×",
+            "pass": false
+          },
+          {
+            "key": "bossDeath",
+            "label": "boss-death share",
+            "value": 0.4107142857142857,
+            "target": "35.0%–60.0%",
+            "pass": true
+          },
+          {
+            "key": "scoreRatio",
+            "label": "p99/p50 score",
+            "value": 14.84768361581925,
+            "target": "≥ 4×",
+            "pass": true
+          },
+          {
+            "key": "calibMAE",
+            "label": "pred-vs-realized P(snap) MAE",
+            "value": 0.07366044647967951,
+            "target": "≤ 0.05",
+            "pass": false
+          },
+          {
+            "key": "probeMs",
+            "label": "probe cost ms/segment",
+            "value": 52.75580677082932,
+            "target": "≤ 70ms",
+            "pass": true
+          }
+        ],
+        "detail": {
+          "die1": {
+            "agg": 0.10119047619047619,
+            "byArchetype": {
+              "miser": 0.041666666666666664,
+              "monk": 0.041666666666666664,
+              "weaver": 0.041666666666666664,
+              "tempoist": 0.041666666666666664,
+              "zealot": 0.5,
+              "glutton": 0.041666666666666664,
+              "debtor": 0
+            },
+            "death1": 0.041666666666666664
+          },
+          "runLength": {
+            "mean": 9.398809523809524,
+            "byArchetype": {
+              "miser": 11.208333333333334,
+              "monk": 7.458333333333333,
+              "weaver": 7.375,
+              "tempoist": 15.041666666666666,
+              "zealot": 3.5416666666666665,
+              "glutton": 7.875,
+              "debtor": 13.291666666666666
+            },
+            "spread": 4.247058823529412
+          },
+          "viability": {
+            "grandMedian": 180.5,
+            "scoreMedian": {
+              "miser": 261,
+              "monk": 212,
+              "weaver": 130,
+              "tempoist": 160,
+              "zealot": 60,
+              "glutton": 180.5,
+              "debtor": 329.5
+            },
+            "over": [
+              "debtor"
+            ],
+            "under": [
+              "zealot"
+            ]
+          },
+          "bossDeath": {
+            "share": 0.4107142857142857,
+            "bossDeaths": 69,
+            "deaths": 168
+          },
+          "score": {
+            "p50": 177,
+            "p90": 838.3000000000009,
+            "p99": 2628.0400000000072,
+            "ratio": 14.84768361581925
+          },
+          "calibration": {
+            "mae": 0.07366044647967951,
+            "aggPredicted": 0.2660516313680597,
+            "aggRealized": 0.1991986262163709,
+            "bins": [
+              {
+                "lo": 0,
+                "hi": 0.1,
+                "n": 68,
+                "predMean": 0.08018970588235298,
+                "realRate": 0.14705882352941177,
+                "err": 0.06686911764705879
+              },
+              {
+                "lo": 0.1,
+                "hi": 0.2,
+                "n": 605,
+                "predMean": 0.15520793388429763,
+                "realRate": 0.15702479338842976,
+                "err": 0.001816859504132129
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.3,
+                "n": 530,
+                "predMean": 0.23969415094339644,
+                "realRate": 0.22641509433962265,
+                "err": 0.013279056603773792
+              },
+              {
+                "lo": 0.3,
+                "hi": 0.4,
+                "n": 238,
+                "predMean": 0.3421768907563028,
+                "realRate": 0.24789915966386555,
+                "err": 0.09427773109243726
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.5,
+                "n": 140,
+                "predMean": 0.43848357142857153,
+                "realRate": 0.22857142857142856,
+                "err": 0.20991214285714296
+              },
+              {
+                "lo": 0.5,
+                "hi": 0.6,
+                "n": 119,
+                "predMean": 0.5565806722689072,
+                "realRate": 0.17647058823529413,
+                "err": 0.380110084033613
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.7,
+                "n": 46,
+                "predMean": 0.622645652173913,
+                "realRate": 0.21739130434782608,
+                "err": 0.40525434782608694
+              },
+              {
+                "lo": 0.7,
+                "hi": 0.8,
+                "n": 1,
+                "predMean": 0.7,
+                "realRate": 1,
+                "err": 0.30000000000000004
+              }
+            ]
+          },
+          "fitFlags": {
+            "overall": {
+              "n": 1747,
+              "band": 0.7842014882655982,
+              "nofitHard": 0.14253005151688608,
+              "nofitEasy": 0.07326846021751574
+            },
+            "byPatron": {
+              "0": {
+                "n": 479,
+                "band": 0.7077244258872651,
+                "nofitHard": 0.20876826722338204,
+                "nofitEasy": 0.08350730688935282
+              },
+              "1": {
+                "n": 390,
+                "band": 0.8051282051282052,
+                "nofitHard": 0.11025641025641025,
+                "nofitEasy": 0.08461538461538462
+              },
+              "2": {
+                "n": 273,
+                "band": 0.8351648351648352,
+                "nofitHard": 0.11721611721611722,
+                "nofitEasy": 0.047619047619047616
+              },
+              "3+": {
+                "n": 605,
+                "band": 0.8082644628099174,
+                "nofitHard": 0.12231404958677686,
+                "nofitEasy": 0.06942148760330578
+              }
+            }
+          },
+          "perf": {
+            "msPerSeg": 52.75580677082932,
+            "evalsPerSeg": 17.604166666666668,
+            "samples": 192
+          }
+        }
+      }
+    },
+    {
+      "name": "r05_easy08",
+      "note": "ramp .05 easy .8 (expr via stage only)",
+      "overrides": {
+        "generator2.bandRamp": 0.05,
+        "generator2.bandEasy": 0.8
+      },
+      "acceptance": {
+        "n": {
+          "runs": 168,
+          "played": 168,
+          "runaways": 0,
+          "segments": 1930,
+          "seg1": 168
+        },
+        "dials": [
+          {
+            "key": "die1",
+            "label": "die@seg-1 (raw snap)",
+            "value": 0.08928571428571429,
+            "target": "8.0%–18.0%",
+            "pass": true
+          },
+          {
+            "key": "runMean",
+            "label": "mean run length",
+            "value": 10.488095238095237,
+            "target": "6–12",
+            "pass": true
+          },
+          {
+            "key": "runSpread",
+            "label": "run-length spread (×)",
+            "value": 3.3125,
+            "target": "≤ 3",
+            "pass": false
+          },
+          {
+            "key": "viability",
+            "label": "viability spread",
+            "value": 2,
+            "target": "none <0.5× / >1.5×",
+            "pass": false
+          },
+          {
+            "key": "bossDeath",
+            "label": "boss-death share",
+            "value": 0.43452380952380953,
+            "target": "35.0%–60.0%",
+            "pass": true
+          },
+          {
+            "key": "scoreRatio",
+            "label": "p99/p50 score",
+            "value": 14.357825159914713,
+            "target": "≥ 4×",
+            "pass": true
+          },
+          {
+            "key": "calibMAE",
+            "label": "pred-vs-realized P(snap) MAE",
+            "value": 0.06356756476683943,
+            "target": "≤ 0.05",
+            "pass": false
+          },
+          {
+            "key": "probeMs",
+            "label": "probe cost ms/segment",
+            "value": 53.83155000000261,
+            "target": "≤ 70ms",
+            "pass": true
+          }
+        ],
+        "detail": {
+          "die1": {
+            "agg": 0.08928571428571429,
+            "byArchetype": {
+              "miser": 0.041666666666666664,
+              "monk": 0.041666666666666664,
+              "weaver": 0.041666666666666664,
+              "tempoist": 0.041666666666666664,
+              "zealot": 0.4166666666666667,
+              "glutton": 0.041666666666666664,
+              "debtor": 0
+            },
+            "death1": 0.02976190476190476
+          },
+          "runLength": {
+            "mean": 10.488095238095237,
+            "byArchetype": {
+              "miser": 14.083333333333334,
+              "monk": 7.125,
+              "weaver": 9.833333333333334,
+              "tempoist": 14.916666666666666,
+              "zealot": 4.666666666666667,
+              "glutton": 7.333333333333333,
+              "debtor": 15.458333333333334
+            },
+            "spread": 3.3125
+          },
+          "viability": {
+            "grandMedian": 242.5,
+            "scoreMedian": {
+              "miser": 390,
+              "monk": 242.5,
+              "weaver": 200,
+              "tempoist": 249,
+              "zealot": 107,
+              "glutton": 156.5,
+              "debtor": 250.5
+            },
+            "over": [
+              "miser"
+            ],
+            "under": [
+              "zealot"
+            ]
+          },
+          "bossDeath": {
+            "share": 0.43452380952380953,
+            "bossDeaths": 73,
+            "deaths": 168
+          },
+          "score": {
+            "p50": 234.5,
+            "p90": 935.9000000000001,
+            "p99": 3366.9100000000003,
+            "ratio": 14.357825159914713
+          },
+          "calibration": {
+            "mae": 0.06356756476683943,
+            "aggPredicted": 0.2453096373056999,
+            "aggRealized": 0.18860103626943006,
+            "bins": [
+              {
+                "lo": 0,
+                "hi": 0.1,
+                "n": 127,
+                "predMean": 0.07965196850393705,
+                "realRate": 0.11023622047244094,
+                "err": 0.030584251968503895
+              },
+              {
+                "lo": 0.1,
+                "hi": 0.2,
+                "n": 762,
+                "predMean": 0.14841955380577426,
+                "realRate": 0.14435695538057744,
+                "err": 0.004062598425196823
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.3,
+                "n": 529,
+                "predMean": 0.23868676748582218,
+                "realRate": 0.2438563327032136,
+                "err": 0.005169565217391425
+              },
+              {
+                "lo": 0.3,
+                "hi": 0.4,
+                "n": 241,
+                "predMean": 0.3430510373443984,
+                "realRate": 0.23651452282157676,
+                "err": 0.10653651452282165
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.5,
+                "n": 111,
+                "predMean": 0.4443297297297299,
+                "realRate": 0.15315315315315314,
+                "err": 0.29117657657657675
+              },
+              {
+                "lo": 0.5,
+                "hi": 0.6,
+                "n": 113,
+                "predMean": 0.5558982300884957,
+                "realRate": 0.23893805309734514,
+                "err": 0.31696017699115053
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.7,
+                "n": 46,
+                "predMean": 0.617121739130435,
+                "realRate": 0.21739130434782608,
+                "err": 0.39973043478260895
+              },
+              {
+                "lo": 0.7,
+                "hi": 0.8,
+                "n": 1,
+                "predMean": 0.7708,
+                "realRate": 0,
+                "err": 0.7708
+              }
+            ]
+          },
+          "fitFlags": {
+            "overall": {
+              "n": 1930,
+              "band": 0.7637305699481866,
+              "nofitHard": 0.18082901554404146,
+              "nofitEasy": 0.05544041450777202
+            },
+            "byPatron": {
+              "0": {
+                "n": 490,
+                "band": 0.6020408163265306,
+                "nofitHard": 0.3693877551020408,
+                "nofitEasy": 0.02857142857142857
+              },
+              "1": {
+                "n": 428,
+                "band": 0.7476635514018691,
+                "nofitHard": 0.14953271028037382,
+                "nofitEasy": 0.102803738317757
+              },
+              "2": {
+                "n": 322,
+                "band": 0.8167701863354038,
+                "nofitHard": 0.14285714285714285,
+                "nofitEasy": 0.040372670807453416
+              },
+              "3+": {
+                "n": 690,
+                "band": 0.863768115942029,
+                "nofitHard": 0.08405797101449275,
+                "nofitEasy": 0.05217391304347826
+              }
+            }
+          },
+          "perf": {
+            "msPerSeg": 53.83155000000261,
+            "evalsPerSeg": 17.770833333333332,
+            "samples": 192
+          }
+        }
+      }
+    },
+    {
+      "name": "r06_rich10",
+      "note": "ramp .06 + richnessWeight .15→.10 (G4: apex supplies real EV now)",
+      "overrides": {
+        "generator2.bandRamp": 0.06,
+        "generator2.richnessWeight": 0.1
+      },
+      "acceptance": {
+        "n": {
+          "runs": 168,
+          "played": 168,
+          "runaways": 0,
+          "segments": 1773,
+          "seg1": 168
+        },
+        "dials": [
+          {
+            "key": "die1",
+            "label": "die@seg-1 (raw snap)",
+            "value": 0.09523809523809523,
+            "target": "8.0%–18.0%",
+            "pass": true
+          },
+          {
+            "key": "runMean",
+            "label": "mean run length",
+            "value": 9.553571428571429,
+            "target": "6–12",
+            "pass": true
+          },
+          {
+            "key": "runSpread",
+            "label": "run-length spread (×)",
+            "value": 2.975,
+            "target": "≤ 3",
+            "pass": true
+          },
+          {
+            "key": "viability",
+            "label": "viability spread",
+            "value": 1,
+            "target": "none <0.5× / >1.5×",
+            "pass": false
+          },
+          {
+            "key": "bossDeath",
+            "label": "boss-death share",
+            "value": 0.48214285714285715,
+            "target": "35.0%–60.0%",
+            "pass": true
+          },
+          {
+            "key": "scoreRatio",
+            "label": "p99/p50 score",
+            "value": 8.48299019607844,
+            "target": "≥ 4×",
+            "pass": true
+          },
+          {
+            "key": "calibMAE",
+            "label": "pred-vs-realized P(snap) MAE",
+            "value": 0.04925279187817263,
+            "target": "≤ 0.05",
+            "pass": true
+          },
+          {
+            "key": "probeMs",
+            "label": "probe cost ms/segment",
+            "value": 64.16135729166974,
+            "target": "≤ 70ms",
+            "pass": true
+          }
+        ],
+        "detail": {
+          "die1": {
+            "agg": 0.09523809523809523,
+            "byArchetype": {
+              "miser": 0.041666666666666664,
+              "monk": 0.041666666666666664,
+              "weaver": 0.041666666666666664,
+              "tempoist": 0.041666666666666664,
+              "zealot": 0.4583333333333333,
+              "glutton": 0.041666666666666664,
+              "debtor": 0
+            },
+            "death1": 0.02976190476190476
+          },
+          "runLength": {
+            "mean": 9.553571428571429,
+            "byArchetype": {
+              "miser": 13.5,
+              "monk": 5.541666666666667,
+              "weaver": 10.583333333333334,
+              "tempoist": 10.25,
+              "zealot": 5,
+              "glutton": 7.125,
+              "debtor": 14.875
+            },
+            "spread": 2.975
+          },
+          "viability": {
+            "grandMedian": 201.5,
+            "scoreMedian": {
+              "miser": 291.5,
+              "monk": 139.5,
+              "weaver": 256,
+              "tempoist": 201.5,
+              "zealot": 108,
+              "glutton": 137,
+              "debtor": 553.5
+            },
+            "over": [
+              "debtor"
+            ],
+            "under": []
+          },
+          "bossDeath": {
+            "share": 0.48214285714285715,
+            "bossDeaths": 81,
+            "deaths": 168
+          },
+          "score": {
+            "p50": 204,
+            "p90": 826.8000000000001,
+            "p99": 1730.5300000000018,
+            "ratio": 8.48299019607844
+          },
+          "calibration": {
+            "mae": 0.04925279187817263,
+            "aggPredicted": 0.2350248166948681,
+            "aggRealized": 0.1900733220530175,
+            "bins": [
+              {
+                "lo": 0,
+                "hi": 0.1,
+                "n": 166,
+                "predMean": 0.07456987951807233,
+                "realRate": 0.0963855421686747,
+                "err": 0.021815662650602377
+              },
+              {
+                "lo": 0.1,
+                "hi": 0.2,
+                "n": 702,
+                "predMean": 0.14616481481481478,
+                "realRate": 0.13817663817663817,
+                "err": 0.007988176638176608
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.3,
+                "n": 451,
+                "predMean": 0.2379257206208426,
+                "realRate": 0.2261640798226164,
+                "err": 0.011761640798226197
+              },
+              {
+                "lo": 0.3,
+                "hi": 0.4,
+                "n": 219,
+                "predMean": 0.3413059360730597,
+                "realRate": 0.2054794520547945,
+                "err": 0.1358264840182652
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.5,
+                "n": 112,
+                "predMean": 0.43861696428571434,
+                "realRate": 0.24107142857142858,
+                "err": 0.19754553571428576
+              },
+              {
+                "lo": 0.5,
+                "hi": 0.6,
+                "n": 84,
+                "predMean": 0.546670238095238,
+                "realRate": 0.39285714285714285,
+                "err": 0.1538130952380951
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.7,
+                "n": 37,
+                "predMean": 0.6239918918918921,
+                "realRate": 0.43243243243243246,
+                "err": 0.19155945945945962
+              },
+              {
+                "lo": 0.7,
+                "hi": 0.8,
+                "n": 1,
+                "predMean": 0.7208,
+                "realRate": 0,
+                "err": 0.7208
+              },
+              {
+                "lo": 0.8,
+                "hi": 0.9,
+                "n": 1,
+                "predMean": 0.8083,
+                "realRate": 1,
+                "err": 0.19169999999999998
+              }
+            ]
+          },
+          "fitFlags": {
+            "overall": {
+              "n": 1773,
+              "band": 0.7354765933446137,
+              "nofitHard": 0.20755781161872533,
+              "nofitEasy": 0.05696559503666103
+            },
+            "byPatron": {
+              "0": {
+                "n": 487,
+                "band": 0.5646817248459959,
+                "nofitHard": 0.4086242299794661,
+                "nofitEasy": 0.026694045174537988
+              },
+              "1": {
+                "n": 412,
+                "band": 0.7330097087378641,
+                "nofitHard": 0.18689320388349515,
+                "nofitEasy": 0.08009708737864078
+              },
+              "2": {
+                "n": 292,
+                "band": 0.8287671232876712,
+                "nofitHard": 0.13013698630136986,
+                "nofitEasy": 0.0410958904109589
+              },
+              "3+": {
+                "n": 582,
+                "band": 0.8333333333333334,
+                "nofitHard": 0.09278350515463918,
+                "nofitEasy": 0.07388316151202749
+              }
+            }
+          },
+          "perf": {
+            "msPerSeg": 64.16135729166974,
+            "evalsPerSeg": 17.645833333333332,
+            "samples": 192
+          }
+        }
+      }
+    }
+  ]
+}

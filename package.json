@@ -1,0 +1,22 @@
+{
+  "name": "minos",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minos (working title) — press-your-luck roguelike. Headless rules core + content registry + Monte-Carlo sim + AI agent playtest harness.",
+  "scripts": {
+    "test": "node scripts/run_tests.mjs",
+    "demo": "node packages/agent/agent_cli.mjs --demo 10",
+    "agent": "node packages/agent/agent_cli.mjs",
+    "bench": "node packages/agent/archetype_driver.mjs",
+    "sweep": "node packages/agent/sweep.mjs",
+    "client": "node apps/client/serve.mjs",
+    "fxlab": "node apps/fxlab/serve.mjs",
+    "sim": "node packages/sim/spellspun_sim.mjs --runs 500 --policy all",
+    "golden": "node scripts/golden_gate.mjs",
+    "golden:seal": "node scripts/golden_gate.mjs --seal"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

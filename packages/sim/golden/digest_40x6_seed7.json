@@ -1,0 +1,58 @@
+{
+  "config": {
+    "runs": 40,
+    "policy": "all",
+    "seed": 7
+  },
+  "totalRuns": 240,
+  "policies": {
+    "bloom-pusher": {
+      "n": 40,
+      "scoreMean": 27.95,
+      "scoreMedian": 14,
+      "segsMean": 2.45,
+      "segsMedian": 2,
+      "snapMean": 2.45
+    },
+    "focus-colour": {
+      "n": 40,
+      "scoreMean": 35.775,
+      "scoreMedian": 15,
+      "segsMean": 2.425,
+      "segsMedian": 2,
+      "snapMean": 2.425
+    },
+    "greedy-broad": {
+      "n": 40,
+      "scoreMean": 20.175,
+      "scoreMedian": 14,
+      "segsMean": 2.1,
+      "segsMedian": 2,
+      "snapMean": 2.1
+    },
+    "perk-aware": {
+      "n": 40,
+      "scoreMean": 28.025,
+      "scoreMedian": 14,
+      "segsMean": 2.525,
+      "segsMedian": 2,
+      "snapMean": 2.525
+    },
+    "random": {
+      "n": 40,
+      "scoreMean": 7.1,
+      "scoreMedian": 0,
+      "segsMean": 0.55,
+      "segsMedian": 0,
+      "snapMean": 0.55
+    },
+    "safe-stop-early": {
+      "n": 40,
+      "scoreMean": 58.4,
+      "scoreMedian": 31,
+      "segsMean": 4.8,
+      "segsMedian": 4,
+      "snapMean": 4.8
+    }
+  }
+}

@@ -1,0 +1,9 @@
+
+===== SWEEP COMPARISON — stage 'spincap' — 7 builds × 20 seeds (wall 9.4 min) =====
+config                   die@1   run μ  spread  viab✗   boss†  p99/50     MAE  nofitH0  ms/seg  PASS
+────────────────────── ─────── ─────── ─────── ────── ─────── ─────── ─────── ──────── ─────── ─────
+spin2_tuned              11.4%     9.4    2.0×      1   48.6%   13.1×   0.049    76.1%    62.1   7/8
+spin3_tuned              10.0%    10.1    3.0×      2   44.3%    9.9×   0.053    40.0%    65.4   6/8
+spin4_tuned               5.0%    12.2   10.0×      4   48.6%   21.6×   0.134    18.8%    67.9   3/8
+legend: die@1=raw seg-1 snap (t 8-18%) · run μ (t 6-12) · spread (t ≤3×) · viab✗=# archetypes out of band · boss† (t 35-60%) · p99/50 (t ≥4×) · MAE (t ≤.05) · nofitH0=patron-0 nofit-hard share · ms/seg (t ≤70)
+targets are the §4 acceptance dials; PASS/8 counts the pass/fail dials green (fit-flags/nofitH0 are reads, not gated).

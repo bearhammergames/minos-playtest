@@ -1,0 +1,128 @@
+{
+ "seed": 20260712,
+ "segments": [
+  {
+   "target": "floor",
+   "stopWhen": "target",
+   "keepFangs": false,
+   "note": "seg1: after two early snaps the read is sub-50% openers are run-killers. Floor mind 77% starts a mind chain (5 mind faces). Fangs refused \u2014 never corrupt a 1pt floor."
+  },
+  {
+   "target": "true",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg2: true mind 47% extends the chain AND pays 3 AND buys trade ink; stitch unspent. Mana single-face bottleneck; fang lastResort (corrupt would break the chain but a snap ends the run)."
+  },
+  {
+   "target": "floor",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg3 BOSS Fevered One: floor body 0.536 is the SAME number this hand/req priced with no warp in run1 \u2014 probe seems blind to the body-reroll warp, so real reach ~45%. Bloom mind 20% extends chain+royal but is a death sentence; survival play = floor, break the mind x2 chain, reach patron 2. lastResort fang: corrupt -12 < snap death."
+  },
+  {
+   "target": "true",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg4: true body 44% extends the body chain + 3pts + trade ink; floor spirit 50% would break chain for 1. Shift rider landed on a MIND face (blind drop after a deliberate park \u2014 odd feel)."
+  },
+  {
+   "target": "true",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg5: true mind 47% over bloom body 15% (extend not worth death odds) and floor 33%/1pt. d2 is both my mana source and my lock-bane carrier \u2014 stated reach ignores bane friction."
+  },
+  {
+   "target": "floor",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg6 BOSS Veiled One: bloom is a blank {veiled:true} \u2014 cannot be chased by directive (driver limit) and true spirit 24% is the twist bait. Floor body 54% = survival; chain break accepted; third corrupt still beats a snap (no knot exists)."
+  },
+  {
+   "target": "floor",
+   "stopWhen": "target",
+   "keepFangs": false,
+   "note": "seg7: Chain-Keeper contract (n=20, HIDDEN in state \u2014 legibility bug) is dead-on-arrival: body only appears at the 21% bloom tier this segment, and the line needs 3 straight body resolves. ~9% for +20 vs risking ~70 banked. Floor mind 89%, contract conceded, fangs refused."
+  },
+  {
+   "target": "bloom",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg8: contract dead (1+2<4). Bloom mind 27% extends chain + 6pts + ROYAL ink vs floor 65%/1pt chain-break. Bank (~100 w/ depth45) survives a snap, so the push risks future EV only; royal-draw info value is the tiebreaker. Stitch+Rope as rescue."
+  },
+  {
+   "target": "floor",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg9 BOSS Chain-Keeper (contract already unmeetable): late-gate arrived \u2014 true is a PURE rung (voids on off-colour keeps) at 3%, shown as a bare pure:true flag with no explanation. Depth compounding makes survival king: floor body 54%."
+  },
+  {
+   "target": "true",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg10: bane-adjusted read \u2014 floor spirit 33% NEEDS the double-locked d2f1 (all 3 spirit faces), true body 20% rides 4 clean body faces + extends chain + Bodybound/Grin fire. Probes ignore debt friction; the player must not."
+  }
+ ],
+ "perks": [
+  {
+   "args": {
+    "card": 2
+   },
+   "note": "ash: Shift = fizzle+rider on clean hand (trap again). Patient Needle +4/spare-spin-stop fits floor-first stop-at-target style better than Thousand Cuts +1-2 on thin keeps."
+  },
+  {
+   "args": {
+    "card": 2
+   },
+   "note": "trade: Shift x2 with a CLEAN hand = fizzle+rider trap (verified headlessly the all-common streak is luck, not a weights bug). Thousand Cuts."
+  },
+  {
+   "args": {
+    "card": 0,
+    "die": 4,
+    "face": 1,
+    "toDie": 5,
+    "toFace": 0
+   },
+   "note": "SHIFT ENGAGED (the FOCUS window): on_keep harsh lock sat on a charm face I sometimes keep for garnish; parked it on d5f0 FANG face \u2014 fangs are kept only at spins-out where a random lock is dead. Paid the mild Errant Spin rider (random face) for it. Cold-parking = timing, not colour."
+  },
+  {
+   "args": {
+    "card": 2
+   },
+   "note": "trade uncommons at last. Refused BOTH ridered sigils \u2014 hand already carries 3 banes and each add is another on_roll chaos source; Knotted Rope (clean) buffs the exact thing killing my runs (snap rescue: stitch save +1 spin). Parked Spinlock fired harmlessly at spins-out this segment \u2014 cold-parking validated."
+  },
+  {
+   "args": {
+    "card": 2
+   },
+   "note": "trade: Shift x2 refused AGAIN (all hand banes are on_roll \u2014 no timing trick exists; parking only pays vs on_keep). The Edge complements Patient Needle: spare-spin stops pay +4, spins-out resolves pay +5 \u2014 full coverage."
+  },
+  {
+   "args": {
+    "card": 2
+   },
+   "note": "stitch-ash draw. Chain-Keeper jackpot (chain>=4 at patron end) REPRICES fangs: any load-bearing fang = corrupt = chain reset = contract dead, so Fang-Dancer (+4 per FREE-fang resolve, the cursed-line witness) is anti-synergy right now. Spiritbound as the long-run grower. Shift x2: on_roll banes, still no parking value."
+  },
+  {
+   "args": {
+    "card": 2,
+    "slot": 4
+   },
+   "note": "stitch-ash, portrait full: FOUR dead-or-negative options (Shift x2 = +1 random bane each; Bloomkeeper payload is DEFERRED/inert this build; Deep Ink has no live prerequisite). Deep Ink over-inks Spiritbound (slot 4 named \u2014 bare pick would eat live Patient Needle). Banes outprice speculative witnesses here."
+  },
+  {
+   "args": {
+    "card": 2,
+    "slot": 4
+   },
+   "note": "ROYAL draw: guaranteed rare+ rolled Augurs (blemished \u2014 the 40% rare pure roll failed; zero pure cards all session). Debtors Grin = the cursed-line witness (+2 per cursedSeg, I have 3) \u2014 clean, over-inks dead Deep Ink. Desc leaks raw var name cursedSeg (legibility bug). No face/bargain card in any of ~12 draws this session."
+  },
+  {
+   "args": {
+    "card": 1,
+    "slot": 2
+   },
+   "note": "ash: Bodybound (live \u2014 body floors are my survival rung) over-inks Knotted Rope (2 fires, 0 score; its +1 spin lands the segment AFTER a save). Depth 84 banked and snap-proof \u2014 compounding > insurance. Shift refused (nothing parkable better; d2 double-lock is on_roll)."
+  }
+ ]
+}

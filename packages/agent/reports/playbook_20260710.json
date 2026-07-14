@@ -1,0 +1,37 @@
+{
+ "seed": 20260710,
+ "segments": [
+  {
+   "target": "bloom",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg1: bloom(spirit2+mana1) at 48% is near-floor reach at 6x value; starts spirit chain + live bloom colour; Bloom buys the ROYAL draw where the deck-wave rares live. Fang only as corrupt-vs-dead insurance."
+  },
+  {
+   "target": "true",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg2: true mind 61%/3pts vs floor spirit 69%/1pt \u2014 chain is only length 1 so the break is cheap, Trinity rotation stays open, and True pays a trade-grade draw (uncommon station = the deck-wave cards). Bloom body 17.5% is a trap."
+  },
+  {
+   "target": "bloom",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg3 BOSS (Soaked Scholar): all rungs repriced flat ~33% because forced mana keeps FEED true+bloom (nice generator moment). Flat reach means value dominates: bloom mind = 6pts + extends mind chain + royal draw (rare deck-wave cards). Fang lastResort."
+  }
+ ],
+ "perks": [
+  {
+   "args": {
+    "card": 3
+   },
+   "note": "ash draw after stitched bloom. Shift x2 is a TRAP with a clean hand (boon fizzles, rider still etches) \u2014 refused. Thousand Cuts fires every resolve vs Patient Needle spare-spin clause that my push style rarely meets."
+  },
+  {
+   "args": {
+    "card": 2
+   },
+   "note": "trade draw. Fang lien (on_keep random-reroll) sits on d5 fang face = already COLD parking (only kept lastResort). Shift would trade that for an on_roll Errant Spin rider on a RANDOM face \u2014 strictly worse; refusing Shift is the placement skill here. Deep Ink clean, Deepen synergy later."
+  }
+ ]
+}

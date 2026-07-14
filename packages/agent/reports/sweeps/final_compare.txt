@@ -1,0 +1,8 @@
+
+===== SWEEP COMPARISON — stage 'final' — 7 builds × 30 seeds (wall 7.9 min) =====
+config                   die@1   run μ  spread  viab✗   boss†  p99/50     MAE  nofitH0  ms/seg  PASS
+────────────────────── ─────── ─────── ─────── ────── ─────── ─────── ─────── ──────── ─────── ─────
+baseline                 10.5%    11.4    3.5×      2   53.8%   11.4×   0.034    39.4%    54.0   6/8
+CHOSEN                   10.5%    10.0    3.1×      2   44.8%   14.1×   0.051    39.4%    54.3   5/8
+legend: die@1=raw seg-1 snap (t 8-18%) · run μ (t 6-12) · spread (t ≤3×) · viab✗=# archetypes out of band · boss† (t 35-60%) · p99/50 (t ≥4×) · MAE (t ≤.05) · nofitH0=patron-0 nofit-hard share · ms/seg (t ≤70)
+targets are the §4 acceptance dials; PASS/8 counts the pass/fail dials green (fit-flags/nofitH0 are reads, not gated).

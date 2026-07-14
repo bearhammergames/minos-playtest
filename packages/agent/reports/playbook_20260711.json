@@ -1,0 +1,25 @@
+{
+ "seed": 20260711,
+ "segments": [
+  {
+   "target": "true",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "seg1: true mind 47%/3pts over floor spirit 72%/1pt \u2014 hand is mind-rich (5 faces) so a mind chain is the run identity (sets up the graft-chain-colour test); stitch unspent as backstop. Bloom body 17.5% ignored."
+  },
+  {
+   "target": "chain",
+   "stopWhen": "target",
+   "keepFangs": false,
+   "note": "seg2: floor mind 77% extends the chain (identity bet, milestone at 3rd extend); true spirit 27% would break it for 3pts \u2014 bad odds. keepFangs FALSE: never corrupt a 1pt floor with stitch unspent."
+  }
+ ],
+ "perks": [
+  {
+   "args": {
+    "card": 2
+   },
+   "note": "trade draw, reach slots BOTH Shift again (3rd draw running). Seized Spin is on_roll: fires on SHOW \u2014 with all-3-face drums no parking spot reduces frequency, and Shift adds a Slipspin rider. Shift skill window = on_keep banes / uneven face counts (needs face economy). Refused; Thousand Cuts."
+  }
+ ]
+}

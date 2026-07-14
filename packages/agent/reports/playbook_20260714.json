@@ -1,0 +1,41 @@
+{
+ "seed": 20260714,
+ "segments": [
+  {
+   "target": "true",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "note": "probe run for the FOCUS surfaces: generic true-target opener (from the seed scan)."
+  },
+  {
+   "target": "floor",
+   "stopWhen": "target",
+   "keepFangs": false,
+   "tapSigils": true,
+   "note": "seg2: floor mind 77% survival (body chain only 1 long). d4 mind-less = stays loose = full bargain cadence exposure. Tapping peek sigils to exercise the boon."
+  },
+  {
+   "target": "floor",
+   "stopWhen": "target",
+   "keepFangs": "lastResort",
+   "tapSigils": true,
+   "note": "seg3 BOSS Widow (keepCap 2): floor spirit 55% survival; mind chain x1 cheap to break; bloom 21% refused. Corrupt beats snap on a boss."
+  }
+ ],
+ "perks": [
+  {
+   "args": {
+    "card": 1,
+    "die": 4,
+    "face": 0
+   },
+   "note": "SEERS BARGAIN taken \u2014 etch-seat DELIBERATE: d4f0 charm on the deadest drum (2/3 charm) = high show cadence, so the peek (does d4 turn body next?) is real info for a body-chain run and the forced random-reroll bane fires at full price. The min-max seat (mana d2f2, instant keep = silence both halves) was considered and rejected as answering nothing."
+  },
+  {
+   "args": {
+    "card": 1
+   },
+   "note": "ash: Shift would FIZZLE here \u2014 only debt on hand is the bargains COUPLED bane (pairId-protected, guard skips it) \u2014 and still etch its rider. Patient Needle (2/3 of my resolves leave spare spins)."
+  }
+ ]
+}
